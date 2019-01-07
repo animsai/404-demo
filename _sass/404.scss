@@ -1,0 +1,16 @@
+/**
+ * Thème 404
+ */
+
+body {
+    background-color: #fafafa;
+}
+
+$font-family-sans-serif: 'Zilla Slab', sans-serif;
+$h1-font-size: 4em;
+
+@import "bootstrap/bootstrap";
+
+:root {
+    --primary: red;
+}
