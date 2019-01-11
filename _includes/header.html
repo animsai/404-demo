@@ -1,17 +1,42 @@
-<header class="site-header">
-  {%- assign default_paths = site.pages | map: "path" -%}
-  {%- assign page_paths = site.header_pages | default: default_paths -%}
-  {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-  <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+{% comment %}
+  Pour ajouter ou modifier une bannière d’évènement,
+  modifiez le fichier `_config.yml`.
+{% endcomment %}
+{%- if site.eventbanner.show -%}
+<a class="event-banner" href="{{ site.eventbanner.url | relative_url }}">
+  <div class="container">
+    {{ site.eventbanner.text }}
+    <u>Plus d’informations →</u>
+  </div>
+</a>
+{%- endif -%}
 
-  {%- if titles_size > 0 -%}
-    <nav class="site-nav">
-      {%- for path in page_paths -%}
+<header class="site-header">
+  <div class="container">
+    <div class="site-header-inner">
+      {%- assign default_paths = site.pages | map: "path" -%}
+      {%- assign page_paths = site.header_pages | default: default_paths -%}
+      {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        <img src="{{ "/assets/logo.png" | relative_url }}" alt="404" draggable="false">
+        <span>
+          association des élèves<br>
+          du CFPT informatique
+        </span>
+      </a>
+
+      {%- if titles_size > 0 -%}
+      <nav class="site-nav">
+        {%- for path in page_paths -%}
         {%- assign my_page = site.pages | where: "path", path | first -%}
         {%- if my_page.title -%}
-        <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <a class="site-nav-link {% if my_page.url == page.url %}active{% endif %}" href="{{ my_page.url | relative_url }}">
+          {{ my_page.title | escape }}
+        </a>
         {%- endif -%}
-      {%- endfor -%}
-    </nav>
-  {%- endif -%}
+        {%- endfor -%}
+      </nav>
+      {%- endif -%}
+    </div>
+  </div>
 </header>

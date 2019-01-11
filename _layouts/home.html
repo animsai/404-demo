@@ -1,16 +1,31 @@
 ---
-layout: default
+layout: base
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<header class="home-header">
+  <div class="container">
+    <h1>
+      <span>Notre but :</span><br>
+      <span>le bien-être des élèves.</span>
+    </h1>
 
-  {{ content }}
+    <p>
+      Nous sommes <strong>404</strong>, l’association des élèves
+      du <a href="https://edu.ge.ch/site/cfpt-informatique/"></a>CFPT informatique</a>.
+    </p>
+  </div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+  <div class="home-header-overlay" role="presentation"></div>
+</header>
+
+<main class="page-content" aria-label="Content">
+  <div class="container">
+    {{ content }}
+
+    {%- if site.posts.size > 0 -%}
+    <h2 class="post-list-heading">
+      {{ page.list_title | default: "Posts" }}
+    </h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
@@ -21,11 +36,13 @@ layout: default
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
+        {{ post.excerpt }}
         {%- endif -%}
       </li>
       {%- endfor -%}
     </ul>
 
-  {%- endif -%}
-</div>
+    {%- endif -%}
+    </div>
+  </div>
+</main>

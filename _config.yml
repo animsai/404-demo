@@ -1,23 +1,32 @@
 title: Association 404
 email: your-email@example.com
 description: >-
-  Association des élèves du CFPT Informatique.
+  Association des élèves du CFPT informatique
 baseurl: "/"
 url: "https://404.gg"
+
+# Event banner settings
+eventbanner:
+  show: false
+  text: Assemblée générale le lundi 31 février !
+  link: '/link/'
 
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+collections:
+  proces-verbaux:
+    output: true
+
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .editorconfig
