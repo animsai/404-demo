@@ -7,6 +7,10 @@ permalink: /cafeteria/
 ## Cuisine
 … (_TODO_)
 
+<div class="card card-body bg-light">
+  Well
+</div>
+
 ## Vente de boissons et snacks
 
 Nous vendons aussi des snacks et des boissons dans la salle des Techniciens 1<sup>ère</sup> année, au 1<sup>er</sup> étage de Rhône.

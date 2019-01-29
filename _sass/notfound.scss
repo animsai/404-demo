@@ -1,0 +1,27 @@
+.not-found-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+
+  text-align: center;
+
+  h1 {
+    line-height: 1;
+    font-weight: 900;
+
+    span {
+      font-size: 92px;
+      display: block;
+    }
+
+    small {
+      font-size: 36px;
+      font-weight: 400;
+    }
+  }
+
+  p {
+    margin-top: 3em;
+  }
+}

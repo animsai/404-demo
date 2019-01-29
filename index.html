@@ -5,13 +5,12 @@ layout: base
 <header class="home-header">
   <div class="container">
     <h1>
-      <span>Notre but :</span><br>
-      <span>le bien-être des élèves.</span>
+      <span>Notre but :<br>ton bien-être.</span>
     </h1>
 
     <p>
       Nous sommes <strong>404</strong>, l’association des élèves
-      du <a href="https://edu.ge.ch/site/cfpt-informatique/"></a>CFPT informatique</a>.
+      du <a href="https://edu.ge.ch/site/cfpt-informatique/">CFPT informatique</a>.
     </p>
   </div>
 
@@ -20,11 +19,32 @@ layout: base
 
 <main class="page-content" aria-label="Content">
   <div class="container">
-    {{ content }}
+    <h2>Voici ce que nous faisons :</h2>
+
+    <div class="activities row">
+      <div class="col-md">
+        <p class="activity">
+          <i class="activity-icon">🤝</i>
+          <span>Nous aidons les élèves.</span>
+        </p>
+      </div>
+      <div class="col-md">
+        <p class="activity">
+          <i class="activity-icon">🍽</i>
+          <span>Nous entretenons une <a href="{{ "/cafeteria" | relative_url }}">cafétéria étudiante</a> à Rhône.</span>
+        </p>
+      </div>
+      <div class="col-md">
+        <p class="activity">
+          <i class="activity-icon">🎮</i>
+          <span>Nous organisons des évènements.</span>
+        </p>
+      </div>
+    </div>
 
     {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">
-      {{ page.list_title | default: "Posts" }}
+      Dernières nouvelles
     </h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -43,6 +63,6 @@ layout: base
     </ul>
 
     {%- endif -%}
-    </div>
+  </div>
   </div>
 </main>

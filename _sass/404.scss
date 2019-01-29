@@ -50,6 +50,7 @@ body {
 }
 
 h2 {
+  margin-top: 1em;
   font-weight: bold;
 }
 
@@ -63,6 +64,21 @@ h3,
   color: white;
 }
 
+p a,
+.link {
+  font-weight: bold;
+  padding: .1em;
+  background-color: #eaf4ff;
+  color: var(--primary-light);
+  border-bottom: .14em solid var(--primary-light);
+
+  &:hover {
+    background-color: #c6e2ff;
+    text-decoration: none;
+  }
+}
+
 @import 'header.scss';
 @import 'footer.scss';
 @import 'home.scss';
+@import 'notfound.scss';
