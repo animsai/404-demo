@@ -67,7 +67,7 @@ h3,
 p a,
 .link {
   font-weight: bold;
-  padding: .1em;
+  padding: 0 .1em;
   background-color: #eaf4ff;
   color: var(--primary-light);
   border-bottom: .14em solid var(--primary-light);
@@ -75,6 +75,21 @@ p a,
   &:hover {
     background-color: #c6e2ff;
     text-decoration: none;
+  }
+}
+
+.document-well {
+  margin: 100px 0;
+
+  img {
+    display: block;
+    width: 90%;
+    max-width: 250px;
+    margin: -80px auto;
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+    transform: rotate(-3deg);
   }
 }
 

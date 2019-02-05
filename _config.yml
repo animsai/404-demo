@@ -4,6 +4,7 @@ description: >-
   Association des élèves du CFPT informatique
 baseurl: "/"
 url: "https://404.gg"
+repo: "nicolapps/404-demo" # GitHub repository name used for the “Edit” link
 
 # Event banner settings
 eventbanner:
@@ -15,6 +16,7 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   proces-verbaux:

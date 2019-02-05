@@ -7,8 +7,23 @@ permalink: /cafeteria/
 ## Cuisine
 … (_TODO_)
 
-<div class="card card-body bg-light">
-  Well
+<div class="card bg-light document-well">
+  <div class="card-body">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <img src="{{ "/assets/charte.png" | relative_url }}" alt="Charte">
+      </div>
+      <div class="col-md-9">
+        L’utilisation de la cuisine de 404 est réservée aux élèves ayant signé la <strong>charte de la cuisine</strong>.
+
+        <p class="lead">
+          <a href="{{ "/pdf/charte.pdf" | relative_url }}" target="_blank">
+            📥 Voir la charte
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
 </div>
 
 ## Vente de boissons et snacks
