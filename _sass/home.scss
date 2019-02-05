@@ -92,3 +92,27 @@
     flex: 1;
   }
 }
+
+.posts-list {
+  .list-group-item {
+    color: inherit;
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+
+  h3 {
+    padding: 0;
+    margin-bottom: .1em;
+
+    background-color: transparent;
+
+    color: var(--primary);
+    font-weight: bold;
+  }
+
+  p {
+    margin: .1em 0;
+  }
+}

@@ -1,0 +1,31 @@
+.post-meta {
+  color: #777;
+  font-size: 1.2em;
+  margin-top: .5em;
+}
+
+.document-well {
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+    margin-bottom: -150px;
+
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
+    transform: rotate(-3deg);
+  }
+
+  // Desktop layout
+  @include media-breakpoint-up(md) {
+    margin: 80px 0;
+    overflow: visible;
+
+    img {
+      width: 150px;
+      margin: -80px auto;
+    }
+  }
+}

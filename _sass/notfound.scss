@@ -7,8 +7,9 @@
   text-align: center;
 
   h1 {
-    line-height: 1;
+    line-height: .8;
     font-weight: 900;
+    margin-bottom: .8em;
 
     span {
       font-size: 92px;
@@ -19,9 +20,5 @@
       font-size: 36px;
       font-weight: 400;
     }
-  }
-
-  p {
-    margin-top: 3em;
   }
 }
