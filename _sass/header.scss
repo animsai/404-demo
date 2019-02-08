@@ -15,11 +15,16 @@
   align-items: center;
   padding: 20px 0;
   line-height: 1.2;
+
+  @include media-breakpoint-down(sm) {
+    padding: 15px 0;
+    font-size: 0;
+  }
 }
 
 .site-title,
 .site-title:hover {
-  color: var(--gray);
+  color: var(--darker);
   text-decoration: none;
 
   transition: .15s ease-in-out opacity;
@@ -33,6 +38,11 @@
   width: 50px;
   height: 50px;
   margin-right: 10px;
+
+  @include media-breakpoint-down(xs) {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 .site-nav {
@@ -48,6 +58,11 @@
   padding: 1.2em;
 
   color: #636f7b;
+  line-height: 1.2;
+
+  @include media-breakpoint-down(xs) {
+    padding: .5em;
+  }
 }
 
 .site-nav-link:hover,
