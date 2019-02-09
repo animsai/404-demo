@@ -37,8 +37,7 @@ Nous vendons aussi des snacks et des boissons dans la salle des Techniciens 1<su
 <div class="row">
 <div class="col-md">
 
-  🥤 Boissons
-  {: .h3 }
+  <h3>🥤 Boissons</h3>
 
   | Article                     | Prix         |
   |-----------------------------|--------------|
@@ -59,8 +58,7 @@ Nous vendons aussi des snacks et des boissons dans la salle des Techniciens 1<su
 </div>
 <div class="col-md">
 
-  🍫 Snacks
-  {: .h3 }
+  <h3>🍫 Snacks</h3>
 
   | Article                     | Prix         |
   |-----------------------------|--------------|
