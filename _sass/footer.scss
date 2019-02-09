@@ -1,5 +1,6 @@
 .site-footer {
   padding: 10px 0;
+  padding-bottom: env(safe-area-inset-bottom); // Handle the home screen bar on iPhone X
   background: white;
   border-top: 1px solid rgba(51, 51, 51, .1);
 
