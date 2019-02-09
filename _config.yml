@@ -7,7 +7,7 @@ repo: "nicolapps/404-demo" # GitHub repository name used for the “Edit” link
 
 # Event banner settings
 eventbanner:
-  show: true
+  show: false
   text: Assemblée générale le lundi 31 février !
   url: "/blog/2018/12/02/bienvenue-sur-notre-nouveau-site.html"
 

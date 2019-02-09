@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Cafétéria
-permalink: /cafeteria/
+permalink: /cafeteria
 ---
 
 ## Cuisine
@@ -16,14 +16,14 @@ Celui-ci est équipé de tout ce qu’il faut pour manger : nous avons à votre 
         <p>L’utilisation de la cuisine de 404 est réservée aux élèves ayant signé la <strong>charte de la cuisine</strong>.</p>
 
         <p class="lead">
-          <a href="{{ "/pdf/charte.pdf" | relative_url }}" target="_blank">
-            📥 Voir la charte
+          <a href="{{ "/pdf/charte-cuisine.pdf" | relative_url }}" target="_blank">
+            📄 Voir la charte
           </a>
         </p>
       </div>
 
       <div class="col-md-auto">
-        <img src="{{ "/assets/charte.png" | relative_url }}" alt="Charte">
+        <img src="{{ "/assets/charte-cuisine.png" | relative_url }}" alt="Charte de la cuisine">
       </div>
     </div>
   </div>
