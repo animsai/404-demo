@@ -19,6 +19,7 @@ plugins:
 
 collections:
   proces-verbaux:
+    permalink: /proces-verbaux/:path
     output: true
 
 # Exclude from processing.

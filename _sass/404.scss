@@ -3,8 +3,6 @@
  */
 
 $font-family-sans-serif: 'Zilla Slab', sans-serif;
-$h1-font-size: 3.5em;
-$h3-font-size: 1.5em;
 
 $primary: #0076BA;
 $enable-rounded: false;
@@ -41,6 +39,13 @@ body {
   margin: 1em 0;
 }
 
+h1 {
+  font-size: 2.5em;
+  @include media-breakpoint-up(sm) {
+    font-size: 3.5em;
+  }
+}
+
 .page-heading,
 .post-title {
   display: inline;
@@ -55,6 +60,22 @@ body {
   -webkit-box-decoration-break: clone;
 }
 
+h2 {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+h3,
+.h3 {
+  font-size: 1.5em;
+  padding: .2em .3em;
+  margin-right: auto;
+  background: var(--dark);
+
+  font-weight: 100;
+  color: white;
+}
+
 .post-content p,
 .post-content li {
   font-size: $lead-font-size;
@@ -65,20 +86,6 @@ body {
   }
 }
 
-h2 {
-  margin-top: 1em;
-  font-weight: bold;
-}
-
-h3,
-.h3 {
-  padding: .2em .3em;
-  margin-right: auto;
-  background: var(--dark);
-
-  font-weight: 100;
-  color: white;
-}
 
 p a,
 li a,
