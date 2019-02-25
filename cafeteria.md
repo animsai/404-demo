@@ -7,7 +7,7 @@ permalink: /cafeteria
 ## 🍳 Cuisine
 Nous proposons aux élèves un local dans lequel ils peuvent venir pendant les pauses et à midi. Le local est situé au 1<sup>er</sup> étage du bâtiment Rhône.
 
-Celui-ci est équipé de tout ce qu’il faut pour manger : nous avons à votre disposition des **micro-ondes**, et d’une **cuisine** équipée de plaques chauffantes, bouilloires, machines à café et condiments de base.
+Celui-ci est équipé de tout ce qu’il faut pour manger : nous avons à votre disposition des **micro-ondes**, une **cuisine** équipée de plaques chauffantes, bouilloires, machines à café et condiments de base.
 
 <div class="card bg-light document-well">
   <div class="card-body">
